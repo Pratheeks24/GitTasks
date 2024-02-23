@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple form bug</title>
+</head>
+<body>
+    <form action="" method=""> <!-- action must be a server side file and method should be get or post-->
+        <label for="name">Name:</label> <!-- for all label we should give the for attribute , the attribute value should be equal to id value so that they bind together-->
+        <input type="text" name="name" id="name" required="">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required="">
+        <br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="4" cols="50"></textarea>
+        <br>
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+</body>
+</html>
