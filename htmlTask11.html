@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Booking Form</title>
+</head>
+<body>
+    <h1>Tour Booking Form</h1>
+    <form >
+        <div>
+            <label for="fname">Full name*:</label>
+        </div>
+        <div>
+            <input type="text" id="fname" name="fullName" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email address*:</label>
+        </div>
+        <div>
+            <input type="email" id="email" name="emailId" required>
+        </div>
+        <br>
+            <div>
+                <label for="package">Select Tour Package*:</label>
+            </div>
+            <div>
+                <select name="package" id="package" required>
+                    <option value="South India">South India</option>
+                <option value="North India">North India</option>
+                </select>
+            </div>
+          <br>
+          <div>
+            <label for="arrival">Arrival date*:</label>
+          </div>
+          <div>
+            <input type="date" id="arrival" name="arrival date" required>
+          </div>
+          <br>
+          <div>
+            <label for="noOfPersons">Number of persons* :</label>
+          </div>
+          <div>
+            <input type="number" id="noOfPersons" name="TOtalNoOfPersons" required>
+          </div>
+          <br>
+          <div>
+            What would you want to avail?*
+          </div>
+          <div>
+            <input type="checkbox" id="board" name="avail" value="Boarding">
+            <label for="board">Boarding</label>
+          </div>
+          <div>
+            <input type="checkbox" id="food" name="avail" value="Food">
+            <label for="food">Food</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sight" name="avail" value="Sight seeing">
+            <label for="sight">Sight seeing</label>
+          </div>
+          <br>
+          Terms and conditions*
+          <div>
+            <input type="radio" id="agree" value="I agree">
+            <label for="agree">I agree</label>
+            <input type="radio" id="disagree" value="I disagree">
+            <label for="agree">I disagree</label>
+          </div>
+          <br>
+          <input type="submit" value="Book Now">
+
+    </form>
+</body>
+</html>
